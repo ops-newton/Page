@@ -45,4 +45,11 @@
 
 
 <h2>Introduction</h2>
+<img src="/images/math/newtonNullStellen.jpg" alt="test">
+Das Newtonverfahren (auch Newton-raphson gennant) ist ein Algorithmus zur Suche von Nullstellen. Es handelt sich dabei um ein Iterationsverfahren, welches sich pro Iteration der Nullstelle immer weiter annähert. Idealerweise wird ein Startpunkt bestimmt, der bereits möglichst nahe an der Nullstelle liegt. Die Funktion wird durch Ihre Tagente in diesem Punkt ersetzt, wobei der Schnittpunkt zwischen Tangente und x-Achse als neuer Ausgangspunkt für das Iterationsverfahren verwendet wird. Dieser Schritt wird analog solange durchgeführt, bis die gewünschte Rechengenauigkeit erreicht ist. \newline
+
+Durch Abwandlung der Formel  $x_{k+1} = x_k -  {\frac{\mathrm f(x_k)}{\mathrm f'(x_k)}}$  welche zur Bestimmung des Nullpunkts einer Funktion verwendet wird, lässt sich auch Minimumx bzw. Maximum der selben Funktion ermitteln.
+Da man hierbei eigentlich die Nullstelle der Ableitung sucht, ergibt sich für das Verfahren folgende Formel: $x_{k+1} = x_k -  {\frac{\mathrm f'(x_k)}{\mathrm f''(x_k)}}$ \newline
+
+Analog kann der Alogirthmus auch für mehrdimensionale Probleme angewandt werden. Die Formel hierfür lautet: $x_{k+1}= x_k - (H_f(x_k))^{-1}(\nabla F(x_k))'$
 </div>
