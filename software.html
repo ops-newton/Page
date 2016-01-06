@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Softwaredescription</title>
+<meta charset="utf-8">
+<link type="text/css" rel="stylesheet" href="styles/style.css" />
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+<!--[if IE 6]>
+<style>body { behavior: url("styles/ie6-hover-fix.htc"); }</style>
+<script type="text/javascript" src="js/ie6-transparency.js"></script>
+<script>DD_belatedPNG.fix('.circle, .read-more, .blue-bullets li, #sidebar .sidebar-button');</script>
+<link type="text/css" rel="stylesheet" href="styles/ie6.css" />
+<![endif]-->
+<!--[if IE 7]><link type="text/css" rel="stylesheet" href="styles/ie7.css" /><![endif]-->
+</head>
+<body class="page">
+<div id="wrap">
+  <div id="header">
+    <h1><a href="#">Softwaredescription</a></h1>
+    <div id="nav">
+      <ul class="menu">
+        <li ><a href="index.html">Home</a></li>
+        <!--<li class="current_page_item"><a href="#">Project</a>
+        <ul class="sub-menu">
+            <li class="current_page_item"><a href="description.html">Project Description</a></li>
+    <li><a href="solution.html">Project Solutions Attempts</a></li>
+     <li><a href="m3.html"> Milestone 3 </a></li>
+                 <li><a href="m4.html"> Milestone 4 </a></li>
+    <li><a href="imp.html">Project Implementation</a></li>
+          </ul></li>-->
+        <li><a href="">Team</a>
+             <ul class="sub-menu">
+            
+			<li class="current_page_item"><a href="mitti.html">Patrick Mittendorfer</a></li>
+			<li class="current_page_item"><a href="patrik.html">Patrik Misurec</a></li>
+			<li class="current_page_item"><a href="neli.html">Neli Petkova</a></li>
+			<li class="current_page_item"><a href="ajla.html">Ajla Kasic</a></li>
+			<li class="current_page_item"><a href="nico.html">Nico Fallosch</a></li>
+            
+            
+          </ul></li>
+        </li>
+      </ul>
+    </div>
+    <!--end nav-->
+  </div>
+
+<h2>Introduction</h2>
+In diesem Bereich stellen wir die <b>Softwaretools</b> vor, welche wir für das Praktikum entwickelt haben.
+  
+<h2>Anwendung gedämpftes Newtonverfahren</h2>
+Gegeben sei die Funktion f(x) = x^4/4-x²+2x und der Startpunkt x0=0. Bei Anwendung  des  Newtonverfahrens  zur  Bestimmung  des  Minimus  der  Funktion ergibt sich eine Endlosschleife zwischen null und eins. Für diesen Problemfall haben wir ein Tool entwickelt, welches das gedämpfte Newtonverfahren verwendet. Dazu wird das Verfahren um den Faktor Lamda erweitert. Der Code dafür sieht folgendermaßen aus: <br><br>
+
+<div align="center"><img src="./images/software/ToolGedaempftCode.png" alt="ToolGedaempftCode"></div>
+<br>
+
+In unserem Tool wird der Benutzer dazu aufgefordert Startparameter festzulegen oder den Default zu verwenden. Einen Screenshot dafür sieht man hier: <br><br>
+<div align="center"><img src="./images/software/ToolGedaempftApplication.png" alt="ToolGedaempftApplication"></div>
+<br>
+
+
+Daraus lässt sich schließen, dass die Gleichung unter Verwendung eines geeigneten Lamda und der Bedingung x0 = 0 mittles gedämpften Newtonverfahrens lösbar ist. Beim Versuch Lambda nahe an eins zu wählen, konnten wir keine Ergebnisse erhalten.
+<br>
+
+<h2>Applikation zur Berechnung des Newtonverfahrens</h2>
+In dem von uns entwickelten Tool ist es dem User möglich das Newtonverfahren anhand einiger vordefinierter Beispiele in Aktion zu sehen. Beginnend muss der User zu Bedienung des Programms die mitgeliefiert Config-Datei anpassen. Dies geschieht Zeilenweise. In der ersten Zeile, muss der Benutzer den Pfad und die Ausführungsparameter (-p -e sind Pflicht!) für das Program "gnuplot" definieren. In der zweiten Zeile wird der Outputfolder definiert.
+Um das Programm zu verwenden, wählt der Benutzer eine Funktion aus, für welche das Newtonverfahren angewandt werden soll. Das Programm fordert den User auf den Startpunkt und die Genauigkeit festzulegen. Im Anschluss erfolgt die Ausgabe der entsprechenden Iterationsschritte (mit aktuellem Iterationspunkt und dem dazugehörigen Funktionswert). Zusätzlich wird für jeden Schritt ein Funktionsplott erstellt, aus welchem die Stammfunktion, die erste Ableitung und die Tangente der ersten Ableitung am jeweiligen Punkt ersichtlich sind. Der Benutzer erhält somit die Möglichkeit, das Newtonverfahren für seine gewählte Funktion grafisch, anschaulich und für jeden Iterationsschritt dargeboten zu bekommen. Des Weiteren wird für den Anwender in einer für ihm komfortablen Weise ein Log-File (LogFile.txt) erstellt, welches alle notwendigen Informationen zur Betrachtung der Grafiken beinhaltet.
+<br><br>
+Tool:<br>
+<div align="center"><img src="./images/software/ToolNewtonverfahren.png" alt="ToolNewtonverfahren"></div>
+<br><br>
+
+Beispiel Plott-Output (<b>f(x) = Stammfunktion; y(x) = Tangente von g(x); g(x) = f'(x)</b>): <br>
+<div align="center"><img src="./images/software/ToolNewtonverfahrenPlott.png" alt="ToolNewtonverfahrenPlott"></div>
+<br><br>
+
+Beispiel Log-File: <br><br>
+<div align="center"><img src="./images/software/LogFile.png" alt="LogFile"></div>
+
+
+
+</div>
